@@ -28,7 +28,7 @@ class MoviePage extends StatelessWidget {
             delegate: SliverChildListDelegate([
               MoviePoster(movie, tag),
               SizedBox(
-                height: size.height * 0.4,
+                height: size.height * 0.45,
                 width: double.infinity,
                 child: BlocBuilder<DetailBloc, DetailBlocState>(
                   builder: (context, state) => state.when(
@@ -121,7 +121,7 @@ class CustomDetailRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(6.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
